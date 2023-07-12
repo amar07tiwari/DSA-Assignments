@@ -1,0 +1,57 @@
+Q.1 What is a Media Query in CSS, and what is its purpose?
+Ans- Media Query is a CSS Feature which allows us to make the responsive web designs. It allows up to make different variations of websites for different screen sizes. 
+The main purpose of the media query is to make the responsive web designs for different types of screen devices. like - mobile, tablet, computer, laptop etc.
+
+
+Q.2 How do you define a media query in CSS?
+Ans- We Define the media query is CSS as follows:-
+
+// media query for screen sizes greater than 600px
+@media (min-width: 600px){
+    // Property to apply
+}
+
+// media query for screen sizes less than 600px
+@media (max-width: 600px){
+    // Property to apply
+}
+
+// media query for screen size between 600px and 800px
+@media (min-width: 600px) and (max-width: 800px){
+    // Property to apply
+}
+
+
+Q.3 Explain the concept of Breakpoints in Responsive Web Design and How They are used in Media Queries.
+Ans- Breakpoints are the pixel values which is defined by the developer to make the website responsive. When a Website reaches to that particular pixel value the website should change according to that device and the breakpoint so that the user experience of the website is good.
+
+For Example:-
+@media (max-width: 600px){
+    // Property to apply
+}
+
+Here the 600px is called as the breakpoint. If we reach to the 600px and lower the website will change itself according to that device and the changes we have made at that breakpoint in CSS using media query.
+
+
+Q.4 What is the purpose of using Media Queries for Print Media?
+Ans- Print media query is used for the printers. When a user wants to print something from the website so what things should be visible in the pdf and how it should look is defined inside the print media query.
+
+For Example:-
+@media print{
+    // Print styles
+}
+
+
+Q.5 What is the purpose of the orientation media feature?
+Ans- orientation media feature is used to define specifically that if the device orientation is portrait than apply these property and if the orientation is landscape than apply these css property.
+
+For Example:-
+For portrait orientation
+@media (orientation: portrait) {
+  // portrait styles
+}
+
+// For landscape orientation
+@media (orientation: landscape) {
+  // landscape styles
+}

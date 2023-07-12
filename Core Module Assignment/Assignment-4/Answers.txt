@@ -1,0 +1,157 @@
+Q.1 Explain Hoisting in JavaScript.
+Ans- Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration.
+
+For Example:-
+console.log(name)  // undefined
+var name;
+
+But in case of `let` it behaves something different:
+For Example:-
+console.log(name)  // ReferenceError
+let name;
+
+It also works with the function:
+For Example:-
+sayHello();
+function sayHello(){
+    console.log("Hello")
+}
+
+Output: Hello
+
+Here we have used a function before its declaration.
+
+If we declare a arrow function or a function expression than this will not work.
+sayHello();
+const sayHello = () => {
+    console.log("Hello")
+}
+
+Output: Error
+
+This code will throw an error.
+
+
+Q.2 Explain Temporal Dead Zone?
+Ans- Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed.
+Temporal Dead Zone starts when the code execution enters the block which contains the let or const declaration and continues until the declaration has executed.
+
+For Example:-
+console.log(name) // TDZ start here 
+
+var name = 'Satish'; // TDZ ends here
+
+
+Q.3 Difference between var & let?
+Ans- Var:-
+- It has global scope
+- It can be declared globally and accessed globally
+- The variable declared with var can be re-declared.
+    For Example:-
+    var a = 10;
+    var b = 20;  // There will be no error as it allows the re-decleration
+- It is hoisted.
+    For Example:-
+    console.log(a); // undefined
+    var a = 10;
+
+
+let:-
+- It has block scope
+- It can ve declared globally but cannot access globally
+- The variable declared with let can't be re-declared.
+    For Example:-
+    let a = 10;
+    let b = 20;  // ReferenceError
+- It is not hoisted.
+    For Example:-
+    console.log(a); // ReferenceError
+    let a = 10;
+
+
+Q.4 What are the major features introduced in ECMAScript 6?
+Ans- The following features were introduced in ECMAScript 6:-
+- let and const keyword
+- arrow function
+- spread and rest operator
+- Classes
+- Promises
+- for-of loop
+- Template literals
+
+
+Q.5 What is the difference between let and const ?
+Ans- let:-
+- It can be updated.
+- It is block scoped.
+- It is not hoisted at the top.
+- It can be declared withot initialization.
+
+const:-
+- It cannot be updated.
+- It is block scoped.
+- It is not hoisted at the top.
+- It needs to declare and initialization at the same time.
+
+
+Q.6  What is template literals in ES6 and how do you use them?
+Ans- The template literals are the `` in ES6. 
+We use it instead of "". template literals makes the code more readable.
+
+For Example:-
+const name = 'Satish';
+const age = 19;
+
+console.log(`My name is ${name}. I am ${age} years old.`)
+// My name is Satish. I am 19 years old.
+
+
+Q.7 What’s difference between map & forEach?
+Ans- The difference are following:-
+1) Returning Value: forEach() returns undefined but the map() returns a new array
+    For Example:-
+    const arr = [1, 2, 3, 4, 5];
+    arr.forEach(ele => ele * ele) // returns undefined
+
+    arr.map(ele => ele * ele) // returns [1, 4, 9, 16, 25]
+
+2) Ability to Chain other methods: map() function can chain with other methods like filter(), sort(), reduce() but forEach() doesn't have this functionality.
+
+
+Q.8 How can you destructure objects and arrays in ES6?
+Ans- Array destructure:-
+    For Example:-
+    let arr = [1, 2, 3, 4, 5];
+    let [one, two] = arr;
+    console.log(one); // 1
+    console.log(two); // 2
+
+Object destructure:-
+    For Example:-
+    let person = {name: "Satish", age: 19, country: "India"};
+
+    let {name, age, country} = person;
+    console.log(name); // Satish
+    console.log(age); // 19
+    console.log(country); // India
+
+
+Q.9 How can you define default parameter values in ES6 functions?
+Ans- We can define default parameter as follows:-
+function multiply(a, b = 20){
+    return a*b;
+}
+
+console.log(multiply(2, 4)); // 8
+console.log(multiply(4)); // 80
+
+
+Q.10 What is the purpose of the spread operator (...) in ES6?
+Ans- The spread operator spreads all the elements and combile it.
+
+For Example:-
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [7, 8, 9];
+
+const arr = [...arr1, ...arr2, ...arr3]; // [1, 2, 3, 4, 5, 6, 7, 8, 9]

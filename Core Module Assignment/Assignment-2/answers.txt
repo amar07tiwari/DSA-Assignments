@@ -1,0 +1,110 @@
+Q.1 What’s Box Model in CSS ? 
+Ans- Box model is a box which wraps every html element inside it. It considers every element content as a box.
+
+It has the following parts:-
+1) Content: The content written inside a tag.
+    For example :-
+    <h1>This is a Heading</h1>
+
+    Here `This is a Heading` is the content.
+
+2) Padding: The Space from inside the content is Called Padding.
+
+3) Border: The place where the padding ends the border starts from there.
+
+4) Margin: The space outside the content or outside the border is known as Margin.
+
+
+Q.2 What are the Different Types of Selectors in CSS & what are the advantages of them?
+Ans- There are many types of Selectors available in CSS.
+1) Element Selector: The Elements are selected by the name of the tag is known as element Selector.
+    For example:-
+    <p>I am a paragraph</p>
+
+    Here this element can be selected by the name `p`.
+
+2) Class Selector: Elements are selected by a class name.
+    For example:-
+    <p class="para">I am a paragraph</p>
+
+    Here this element can be selected as `.para`.
+
+3) Id Selector: Element is selected by the name of the id.
+    For example:-
+    <p id="para">I am a paragraph</p>
+
+    Here this element can be selected as `#para`.
+
+4) Universal Selector: It selects the whole element of the HTML. It is denoted by `*`.
+
+5) Pseudo-class Selector: It is used to define the special state of an element.
+    For example:-
+    - :hover
+    - :focus
+    - :active
+    - :link
+    - :visited
+    - :first-child
+    - :last-child
+
+6) Pseudo-element Selector: It is used to style specified parts of an element.
+    For example:-
+    - ::first-line
+    - ::first-letter
+    - ::before
+    - ::after
+    - ::marker
+    - ::selection
+
+
+Q.3 What is VW/VH ?
+Ans- VW and VH are the css units used to define the height and width of the webpage.
+Here VH means 'View-Height' and VW means 'Vies-Width'
+
+
+Q.4 Whats difference between Inline, Inline Block and block ?
+Ans- These are the display property used in CSS.
+1) Inline: It takes the only width which it requires. It will not cause the line break.
+
+2) Block: It takes the entire width of the screen. No matter how much content is there inside it. The block elements always starts with a new line.
+
+3) Inline-block: It can take the height and width as we specify and not start with a new line.
+
+
+Q.5 How is Border-box different from Content Box?
+Ans- These are the properties of box-sizing of CSS.
+1) Content-box: By default most the element has the property `box-sizing: content-box;`. 
+    For Example:-
+    <div class="box" style="background-color: orange;"></div>
+
+    Here, if we give the height and width to 100px to the .box and we also want to have some padding in the box so we can apply `padding: 20px' and now the width of the box is 120px and height is also 120px.
+
+2) Border-box: If we apply the box-sizing: 'border-box' so the element will be of that size only which we have given it will not affect by the margin, padding and border. the height and width will remain same.
+
+
+Q.6 What’s z-index and How does it Function ?
+Ans- Z-index is a term which is used to layer the elements on the webpage. It defines the order of the elements. 
+The elements which have the higher index value will display on the top.
+
+
+Q.7 What’s Grid & Flex and difference between them?
+Ans- Grid and Flex are used to create the layouts of a webpage.
+
+# Flex :
+- It is used to create one dimensional layouts.
+- It is Content-first which means it is used when we have the content then we used to style it using flex.
+
+# Grid :
+- It is use to create mulit-dimensional layouts.
+- It is Layout-first which means it ensures to make the layout first then put the content inside it.
+
+
+Q.8 Difference between absolute and relative and sticky and fixed position explain with example.
+Ans- 
+1) Absolute Position: An element with position: absolute; will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
+
+2) Relative Position: Setting the top, right, bottom, and left properties of an element with position: relative; property will cause it to adjust from its normal position. The other objects or elements will not fill the gap.
+
+3) Sticky Position: position: sticky; property works like relative in its initial phase. but when the element appears it stick to its parent to whatever property we have given.
+
+4) Fixed Position: Position: fixed; property applied to an element will cause it to always stay in the same place even if the page is scrolled. To position the element we use top, right, bottom, left properties.

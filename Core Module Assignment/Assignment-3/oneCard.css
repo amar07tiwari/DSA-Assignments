@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: #fff;
+}
+
+nav .logo img{
+    width: 70px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul .hamburger{
+    display: none;
+}
+
+nav ul li a{
+    font-weight: 500;
+    color: #212121;
+}
+
+.primary-button{
+    padding: 5px 10px;
+    background-color: #1893f7;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* Header Section */
+header{
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    margin-top: 20px;
+}
+
+header .header-left{
+    width: 50%;
+}
+
+header .header-left h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+header .header-left h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #1893f7;
+}
+
+header .header-left h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1893f7;
+    margin-bottom: 10px;
+}
+
+header .header-left p{
+    color: #414141;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header .header-left .brands img{
+    width: 350px;
+    height: auto;
+}
+
+header .header-left .primary-button{
+    padding: 8px 16px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+header .header-left .primary-button i{
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header .header-right{
+    width: 50%;
+}
+
+header .header-right video{
+    width: 100%;
+    height: auto;
+}
+
+/* hidden fees section */
+.hidden-fees{
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    padding: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden-fees h2{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    background-image: linear-gradient(92deg,#217ee6 3%,#3187d5 44%,#69a798 70%,#fcf2a6 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hidden-fees p{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+/* feature section */
+.feature{
+    padding: 30px 120px;
+    display: flex;
+    align-items: center;
+}
+
+.feature .feature-left{
+    width: 50%;
+}
+
+.feature .feature-left video{
+    width: 100%;
+    height: auto;
+}
+
+.feature .feature-right{
+    width: 50%;
+    text-align: right;
+}
+
+.feature .feature-right h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.feature .feature-right p{
+    font-size: 23px;
+    margin-top: 10px;
+    color: #696969;
+    font-weight: 400;
+}
+
+/* Feature 1 */
+.feature-1{
+    flex-direction: row-reverse;
+    background-color: #f3f2f3;
+    gap: 10px;
+}
+
+.feature-1 .feature-right{
+    text-align: left;
+}
+
+/* feature 3 */
+.feature-3{
+    flex-direction: row-reverse;
+    background-color: #f3f2f3;
+    gap: 0;
+}
+
+.feature-3 .feature-right{
+    text-align: left;
+}
+
+.feature-3 .feature-right h2{
+    font-size: 45px;
+}
+
+/* feature 5 */
+.feature-5{
+    flex-direction: row-reverse;
+    background-color: #f3f2f3;
+    gap: 0;
+}
+
+.feature-5 .feature-left img{
+    width: 95%;
+}
+
+.feature-5 .feature-right{
+    text-align: left;
+}
+
+.feature-5 .feature-right h2{
+    font-size: 50px;
+}
+
+.feature-5 .feature-right img{
+    width: 70px;
+}
+
+.secondary-button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-image: linear-gradient(to bottom,#217ee6,#2498e3);
+    color: #fff;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Banking Partner */
+.banking-partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #e2e1e1;
+    padding: 50px 80px;
+}
+
+.banking-partner h2{
+    font-size: 65px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.banking-partner p{
+    font-size: 25px;
+    color: #696969;
+    font-weight: 400;  
+    text-align: center;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.banking-partner img{
+    width: 350px;
+    height: auto;
+}
+
+/* Investors */
+.investors{
+    background-color: #fff;
+}
+
+.investors .company-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.investors .company-logo img:hover{
+    transform: scale(1.02);
+}
+
+footer{
+    display: flex;
+    padding: 50px 80px;
+    align-items: top;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer p{
+    width: 350px;
+}
+
+footer h3{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer p, footer li{
+    color: #9c9c9c;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+
+footer .newsletter{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .newsletter input{
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .newsletter button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1893f7;
+    color: #ffffff;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    nav{
+        width: 100vw;
+        padding: 8px 30px;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    nav ul .hamburger{
+        display: block;
+        margin-right: -20px;
+    }
+
+    .container{
+        margin: 0 15px;
+    }
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px 30px;
+    }
+
+    header .header-left{
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    header .header-left h2{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    header .header-left h1{
+        font-size: 50px;
+    }
+
+    header .header-left .brands img{
+        width: 100%;
+        height: auto;
+    }
+
+    header .header-left p{
+        font-size: 14px;
+    }
+
+    header .header-left .primary-button{
+        padding: 8px 16px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    header .header-right{
+        width: 100%;
+    }
+
+    .hidden-fees{
+        width: 100vw;
+        padding: 30px 20px 30px 20px;
+        text-align: center;
+        background-color: #000000;
+    }
+
+    .hidden-fees h2{
+        font-size: 60px;
+        padding: 20px;
+        text-align: center;
+        line-height: 70px;
+        margin-bottom: 40px;
+    }
+
+    .feature{
+        flex-direction: column;
+        padding: 50px 40px;
+    }
+
+    .feature .feature-left{
+        width: 100%;
+    }
+
+    .feature .feature-right{
+        width: 100%;
+    }
+
+    .feature-1, .feature-3, .feature-5{
+        flex-direction: column-reverse;
+    }
+
+    .banking-partner{
+        padding: 30px 40px;
+    }
+
+    .banking-partner p{
+        width: 100%;
+    }
+
+    .investors{
+        flex-direction: column;
+    }
+
+    .investors .company-logo{
+        flex-direction: column;
+    }
+
+    .investors .company-logo img{
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    footer{
+        padding: 40px 40px;
+        flex-direction: column;
+        gap: 40px;
+        text-align: left;
+    }
+
+    footer p{
+        width: 100%;
+    }
+}
+
+
+
